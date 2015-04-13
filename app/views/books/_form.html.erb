@@ -1,0 +1,19 @@
+<%= simple_form_for(@book) do |f| %>
+
+<%=f.input :title, label:'Title' %>
+<%=f.input :content %>
+<%=f.input :page %>
+<%=f.input :price %>
+  
+
+ 
+  <div class="field">
+    <%= f.label :publish_date %><br>
+    <%= f.date_select :publish_date %>
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
